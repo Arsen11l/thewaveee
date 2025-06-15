@@ -1,0 +1,264 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px; 
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px; 
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+
+.header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 26px; 
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 19px; 
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6600;
+}
+
+
+.hero-section {
+    position: relative;
+    height: 400px;
+    background-image: url('images/wave_logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    flex-grow: 1;
+}
+
+.hero-content {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 4.2em; 
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.6em; 
+    margin-bottom: 30px;
+}
+
+
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 100px;
+    flex-grow: 1;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.about-section p {
+    font-size: 1.3em; 
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-social-links {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.about-social-links h3 {
+    font-size: 1.9em; 
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.about-social-links .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.catalog-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.catalog-section h2 {
+    font-size: 3.2em; 
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.7em; 
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+.product-card .price {
+    font-size: 1.4em; 
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.product-card p {
+    font-size: 1.05em; 
+    margin-bottom: 5px;
+    text-align: center; 
+}
+
+.product-card .delivery {
+    font-size: 0.95em; 
+    color: #666;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.product-card .btn {
+    width: auto;
+    padding: 8px 16px;
+    font-size: 15px; 
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+}
+
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em; 
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 5px 0;
+}
